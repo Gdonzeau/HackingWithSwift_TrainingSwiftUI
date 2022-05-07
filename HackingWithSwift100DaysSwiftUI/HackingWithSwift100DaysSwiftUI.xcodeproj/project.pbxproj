@@ -19,6 +19,7 @@
 		F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BBF282682E100D87600 /* CBUUIDs.swift */; };
 		F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC1282682EA00D87600 /* Peripherals.swift */; };
 		F05C5BC4282682F300D87600 /* BluetoothPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */; };
+		F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC52826CFCB00D87600 /* ContentView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F05C5BBF282682E100D87600 /* CBUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
 		F05C5BC1282682EA00D87600 /* Peripherals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peripherals.swift; sourceTree = "<group>"; };
 		F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheral.swift; sourceTree = "<group>"; };
+		F05C5BC52826CFCB00D87600 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F0075B9428268168004CD640 /* Model */,
 				F0075B91282680F5004CD640 /* Services */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
+				F05C5BC52826CFCB00D87600 /* ContentView2.swift */,
 				F0075B692825C329004CD640 /* ContentView.swift */,
 				F0075B6B2825C32D004CD640 /* Assets.xcassets */,
 				F0075B6D2825C32D004CD640 /* Preview Content */,
@@ -301,6 +304,7 @@
 				F0075B9328268132004CD640 /* BluetoothService.swift in Sources */,
 				F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */,
 				F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */,
+				F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */,
 				F0075B682825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift in Sources */,
 				F05C5BBE282682D300D87600 /* Status.swift in Sources */,
 			);

@@ -195,7 +195,7 @@ extension BluetoothService: CBPeripheralDelegate {
         // Get and print user description for a given characteristic
         if descriptor.uuid.uuidString == CBUUIDCharacteristicUserDescriptionString,
             let userDescription = descriptor.value as? String {
-            print("Characterstic \(descriptor.characteristic?.uuid.uuidString) is also known as \(userDescription)")
+            print("Characterstic \(String(describing: descriptor.characteristic?.uuid.uuidString)) is also known as \(userDescription)")
         }
     }
     
