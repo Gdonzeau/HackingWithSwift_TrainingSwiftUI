@@ -4,23 +4,40 @@
 //  Created by Guillaume Donzeau on 28/01/2022.
 //
 
-import Foundation
+//import Foundation
 import CoreBluetooth
+import Combine
+//import SwiftUI
 
 class BluetoothService: NSObject {
+    // Test
+    //static var shared = BluetoothService()
+    static let shared: BluetoothService = .init()
     
-    static var shared = BluetoothService()
     var bluetoothPeripheral = BluetoothPeripheral.shared
+    
+    // specific Combine
+    // Savoir à qui ça sert
+    var stateSubject: PassthroughSubject<CBManagerState, Never> = .init()
+    var peripheralSubject: PassthroughSubject<CBPeripheral, Never> = .init()
+    var servicesSubject: PassthroughSubject<[CBService], Never> = .init()
+    var characteristicsSubject: PassthroughSubject<(CBService, [CBCharacteristic]), Never> = .init()
+    //
     
     private var centralManager: CBCentralManager!
     
     var discoveredPeripherals = [CBPeripheral]()
     
     var messageReceived = ""
-    
+    /*
     override init() {
         super.init()
         centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
+     */
+    func start() {
+        // Changement
+        centralManager = .init(delegate: self, queue: .main)
     }
     
     func startScan() {
@@ -99,6 +116,7 @@ extension BluetoothService: CBCentralManagerDelegate {
         @unknown default:
             print("Fatal Error")
         }
+        stateSubject.send(central.state) // Envoi les données ?
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
@@ -110,10 +128,12 @@ extension BluetoothService: CBCentralManagerDelegate {
             let peripheralDetected = PeripheralDetected(name: nameTarget, peripheral: peripheral, indentifier: peripheral.identifier)
                 bluetoothPeripheral.peripheralsDetected.append(peripheralDetected)
         }
-        
+        /* // Notifications inutiles ?
             let name = Notification.Name(rawValue: "BluetoothDiscovered")
             let notification = Notification(name: name)
             NotificationCenter.default.post(notification)
+        */
+        peripheralSubject.send(peripheral)
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -153,11 +173,7 @@ extension BluetoothService: CBPeripheralDelegate {
     }
      
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
-        /*
-        guard service.characteristics != nil else {
-            return
-        }
-        */
+        
         guard let characteristics = service.characteristics else { return }
         
         

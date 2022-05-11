@@ -20,6 +20,9 @@
 		F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC1282682EA00D87600 /* Peripherals.swift */; };
 		F05C5BC4282682F300D87600 /* BluetoothPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */; };
 		F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC52826CFCB00D87600 /* ContentView2.swift */; };
+		F06AF6C72829A56D006B350D /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6C62829A56C006B350D /* ContentView3.swift */; };
+		F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6C8282A6036006B350D /* Bluetooth.swift */; };
+		F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6CE282BF7B5006B350D /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		F05C5BC1282682EA00D87600 /* Peripherals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peripherals.swift; sourceTree = "<group>"; };
 		F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheral.swift; sourceTree = "<group>"; };
 		F05C5BC52826CFCB00D87600 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		F06AF6C62829A56C006B350D /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
+		F06AF6C8282A6036006B350D /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		F06AF6CE282BF7B5006B350D /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = "../../Documents annexes/SleepCalculator.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +115,11 @@
 				F0075B9428268168004CD640 /* Model */,
 				F0075B91282680F5004CD640 /* Services */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
+				F06AF6C8282A6036006B350D /* Bluetooth.swift */,
+				F06AF6C62829A56C006B350D /* ContentView3.swift */,
 				F05C5BC52826CFCB00D87600 /* ContentView2.swift */,
 				F0075B692825C329004CD640 /* ContentView.swift */,
+				F06AF6CE282BF7B5006B350D /* SleepCalculator.mlmodel */,
 				F0075B6B2825C32D004CD640 /* Assets.xcassets */,
 				F0075B6D2825C32D004CD640 /* Preview Content */,
 			);
@@ -305,6 +314,9 @@
 				F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */,
 				F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */,
 				F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */,
+				F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */,
+				F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */,
+				F06AF6C72829A56D006B350D /* ContentView3.swift in Sources */,
 				F0075B682825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift in Sources */,
 				F05C5BBE282682D300D87600 /* Status.swift in Sources */,
 			);
@@ -468,6 +480,7 @@
 				DEVELOPMENT_TEAM = 8453MU78WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Demande d'accès au Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,6 +510,7 @@
 				DEVELOPMENT_TEAM = 8453MU78WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Demande d'accès au Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

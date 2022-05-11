@@ -7,9 +7,11 @@
 
 import Foundation
 import CoreBluetooth
-
-struct PeripheralDetected {
+/*
+struct PeripheralDetected: Identifiable {
+    var id = UUID()
     var name: String
     var peripheral: CBPeripheral
     var indentifier: UUID
 }
+*/

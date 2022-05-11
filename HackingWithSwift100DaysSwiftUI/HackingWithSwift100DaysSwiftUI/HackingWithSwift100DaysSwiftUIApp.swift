@@ -11,7 +11,10 @@ import SwiftUI
 struct HackingWithSwift100DaysSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView2()
+            //Bluetooth()
+            //ContentView() // Resto
+            //ContentView2() // Drapeaux
+            //ContentView3() // Coffee and Sleep
         }
     }
 }

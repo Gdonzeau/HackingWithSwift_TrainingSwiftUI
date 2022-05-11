@@ -8,7 +8,7 @@
 import Foundation
 import CoreBluetooth
 
-class BluetoothPeripheral {
+struct BluetoothPeripheral {
     static let shared = BluetoothPeripheral()
     
     var centralManager: CBCentralManager?
