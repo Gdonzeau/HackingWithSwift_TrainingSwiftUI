@@ -23,6 +23,10 @@
 		F06AF6C72829A56D006B350D /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6C62829A56C006B350D /* ContentView3.swift */; };
 		F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6C8282A6036006B350D /* Bluetooth.swift */; };
 		F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6CE282BF7B5006B350D /* SleepCalculator.mlmodel */; };
+		F06B569A282FBACE00008ED8 /* ContentView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B5699282FBACE00008ED8 /* ContentView4.swift */; };
+		F06B569D282FBC2100008ED8 /* some-file.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F06B569C282FBC2100008ED8 /* some-file.rtf */; };
+		F06B569F28305C1400008ED8 /* ContentView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B569E28305C1400008ED8 /* ContentView5.swift */; };
+		F06B56A12830E3B600008ED8 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F06B56A02830E3B600008ED8 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		F06AF6C62829A56C006B350D /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
 		F06AF6C8282A6036006B350D /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 		F06AF6CE282BF7B5006B350D /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = "../../Documents annexes/SleepCalculator.mlmodel"; sourceTree = "<group>"; };
+		F06B5699282FBACE00008ED8 /* ContentView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView4.swift; sourceTree = "<group>"; };
+		F06B569C282FBC2100008ED8 /* some-file.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "some-file.rtf"; path = "../../../Documents annexes/some-file.rtf"; sourceTree = "<group>"; };
+		F06B569E28305C1400008ED8 /* ContentView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView5.swift; sourceTree = "<group>"; };
+		F06B56A02830E3B600008ED8 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../../Documents annexes/HackingWithSwift/Classic/project5/Project5/start.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +120,13 @@
 		F0075B662825C329004CD640 /* HackingWithSwift100DaysSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F06B569B282FBC1200008ED8 /* Files */,
 				F0075B9428268168004CD640 /* Model */,
 				F0075B91282680F5004CD640 /* Services */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
 				F06AF6C8282A6036006B350D /* Bluetooth.swift */,
+				F06B569E28305C1400008ED8 /* ContentView5.swift */,
+				F06B5699282FBACE00008ED8 /* ContentView4.swift */,
 				F06AF6C62829A56C006B350D /* ContentView3.swift */,
 				F05C5BC52826CFCB00D87600 /* ContentView2.swift */,
 				F0075B692825C329004CD640 /* ContentView.swift */,
@@ -176,6 +187,15 @@
 				F05C5BBD282682D300D87600 /* Status.swift */,
 			);
 			path = BlueTooth;
+			sourceTree = "<group>";
+		};
+		F06B569B282FBC1200008ED8 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				F06B569C282FBC2100008ED8 /* some-file.rtf */,
+				F06B56A02830E3B600008ED8 /* start.txt */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0075B6F2825C32D004CD640 /* Preview Assets.xcassets in Resources */,
+				F06B56A12830E3B600008ED8 /* start.txt in Resources */,
+				F06B569D282FBC2100008ED8 /* some-file.rtf in Resources */,
 				F0075B6C2825C32D004CD640 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,9 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B569F28305C1400008ED8 /* ContentView5.swift in Sources */,
 				F0075B6A2825C329004CD640 /* ContentView.swift in Sources */,
 				F05C5BC4282682F300D87600 /* BluetoothPeripheral.swift in Sources */,
 				F0075B9328268132004CD640 /* BluetoothService.swift in Sources */,
+				F06B569A282FBACE00008ED8 /* ContentView4.swift in Sources */,
 				F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */,
 				F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */,
 				F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */,

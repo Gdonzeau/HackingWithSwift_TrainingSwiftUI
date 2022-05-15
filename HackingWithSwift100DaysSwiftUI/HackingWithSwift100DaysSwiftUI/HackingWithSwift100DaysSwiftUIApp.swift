@@ -14,7 +14,9 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
             //Bluetooth()
             //ContentView() // Resto
             //ContentView2() // Drapeaux
-            ContentView3() // Coffee and Sleep
+            //ContentView3() // Coffee and Sleep
+            //ContentView4() // Bundles et autres
+            ContentView5() // Strings
         }
     }
 }
