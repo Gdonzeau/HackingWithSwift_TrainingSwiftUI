@@ -16,7 +16,9 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
             //ContentView2() // Drapeaux
             //ContentView3() // Coffee and Sleep
             //ContentView4() // Bundles et autres
-            ContentView5() // Strings
+            //ContentView5() // Strings
+            //ContentViewAnimation() // Animations, ben oui
+            ContentViewAnimation2() // Animations, suite
         }
     }
 }

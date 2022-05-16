@@ -38,7 +38,7 @@ struct ContentView5: View {
             .navigationTitle(rootWord)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text("\(score)")
+                    Text("Your score is : \(score)")
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("New Game", action: startGame)
