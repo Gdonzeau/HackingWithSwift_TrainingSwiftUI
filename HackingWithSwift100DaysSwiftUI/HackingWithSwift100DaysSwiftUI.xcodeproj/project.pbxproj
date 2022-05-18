@@ -29,6 +29,13 @@
 		F06B56A12830E3B600008ED8 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F06B56A02830E3B600008ED8 /* start.txt */; };
 		F06B56A328312D7200008ED8 /* ContentViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A228312D7200008ED8 /* ContentViewAnimation.swift */; };
 		F06B56A528328A7200008ED8 /* ContentViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A428328A7200008ED8 /* ContentViewAnimation2.swift */; };
+		F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A62832B96E00008ED8 /* ContentView6.swift */; };
+		F06B56A92832C68D00008ED8 /* ContentViewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A82832C68D00008ED8 /* ContentViewSheet.swift */; };
+		F06B56AB2832E8EC00008ED8 /* ContentViewOnDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56AA2832E8EC00008ED8 /* ContentViewOnDelete.swift */; };
+		F0F41C42283546920097F7A2 /* ContentViewiExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C41283546920097F7A2 /* ContentViewiExpense.swift */; };
+		F0F41C44283548120097F7A2 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C43283548120097F7A2 /* ExpenseItem.swift */; };
+		F0F41C46283548520097F7A2 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C45283548520097F7A2 /* Expenses.swift */; };
+		F0F41C4828354D890097F7A2 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4728354D890097F7A2 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +81,13 @@
 		F06B56A02830E3B600008ED8 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../../Documents annexes/HackingWithSwift/Classic/project5/Project5/start.txt"; sourceTree = "<group>"; };
 		F06B56A228312D7200008ED8 /* ContentViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewAnimation.swift; sourceTree = "<group>"; };
 		F06B56A428328A7200008ED8 /* ContentViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewAnimation2.swift; sourceTree = "<group>"; };
+		F06B56A62832B96E00008ED8 /* ContentView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView6.swift; sourceTree = "<group>"; };
+		F06B56A82832C68D00008ED8 /* ContentViewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSheet.swift; sourceTree = "<group>"; };
+		F06B56AA2832E8EC00008ED8 /* ContentViewOnDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewOnDelete.swift; sourceTree = "<group>"; };
+		F0F41C41283546920097F7A2 /* ContentViewiExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewiExpense.swift; sourceTree = "<group>"; };
+		F0F41C43283548120097F7A2 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		F0F41C45283548520097F7A2 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		F0F41C4728354D890097F7A2 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +141,14 @@
 				F06B569B282FBC1200008ED8 /* Files */,
 				F0075B9428268168004CD640 /* Model */,
 				F0075B91282680F5004CD640 /* Services */,
+				F0F41C402835466D0097F7A2 /* iExpense */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
+				F06B56AA2832E8EC00008ED8 /* ContentViewOnDelete.swift */,
+				F06B56A82832C68D00008ED8 /* ContentViewSheet.swift */,
 				F06AF6C8282A6036006B350D /* Bluetooth.swift */,
 				F06B56A228312D7200008ED8 /* ContentViewAnimation.swift */,
 				F06B56A428328A7200008ED8 /* ContentViewAnimation2.swift */,
+				F06B56A62832B96E00008ED8 /* ContentView6.swift */,
 				F06B569E28305C1400008ED8 /* ContentView5.swift */,
 				F06B5699282FBACE00008ED8 /* ContentView4.swift */,
 				F06AF6C62829A56C006B350D /* ContentView3.swift */,
@@ -202,6 +220,17 @@
 				F06B56A02830E3B600008ED8 /* start.txt */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		F0F41C402835466D0097F7A2 /* iExpense */ = {
+			isa = PBXGroup;
+			children = (
+				F0F41C41283546920097F7A2 /* ContentViewiExpense.swift */,
+				F0F41C4728354D890097F7A2 /* AddView.swift */,
+				F0F41C43283548120097F7A2 /* ExpenseItem.swift */,
+				F0F41C45283548520097F7A2 /* Expenses.swift */,
+			);
+			path = iExpense;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,15 +365,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B56AB2832E8EC00008ED8 /* ContentViewOnDelete.swift in Sources */,
 				F06B569F28305C1400008ED8 /* ContentView5.swift in Sources */,
 				F0075B6A2825C329004CD640 /* ContentView.swift in Sources */,
 				F05C5BC4282682F300D87600 /* BluetoothPeripheral.swift in Sources */,
 				F0075B9328268132004CD640 /* BluetoothService.swift in Sources */,
 				F06B569A282FBACE00008ED8 /* ContentView4.swift in Sources */,
+				F0F41C4828354D890097F7A2 /* AddView.swift in Sources */,
+				F0F41C46283548520097F7A2 /* Expenses.swift in Sources */,
+				F0F41C42283546920097F7A2 /* ContentViewiExpense.swift in Sources */,
+				F0F41C44283548120097F7A2 /* ExpenseItem.swift in Sources */,
 				F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */,
 				F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */,
 				F06B56A328312D7200008ED8 /* ContentViewAnimation.swift in Sources */,
 				F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */,
+				F06B56A92832C68D00008ED8 /* ContentViewSheet.swift in Sources */,
+				F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */,
 				F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */,
 				F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */,
 				F06B56A528328A7200008ED8 /* ContentViewAnimation2.swift in Sources */,

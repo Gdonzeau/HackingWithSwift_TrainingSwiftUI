@@ -18,7 +18,11 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
             //ContentView4() // Bundles et autres
             //ContentView5() // Strings
             //ContentViewAnimation() // Animations, ben oui
-            ContentViewAnimation2() // Animations, suite
+            //ContentViewAnimation2() // Animations, suite
+            //ContentView6() //@Published et @StateObject
+            //ContentViewSheet() // sheet
+            //ContentViewOnDelete() // Ajout et suppression de lignes (UIKit : cell) dans une liste (UIKit : TableView)
+            ContentViewiExpense() // Project iExpense
         }
     }
 }
