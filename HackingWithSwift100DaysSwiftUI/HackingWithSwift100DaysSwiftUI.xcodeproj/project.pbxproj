@@ -36,6 +36,8 @@
 		F0F41C44283548120097F7A2 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C43283548120097F7A2 /* ExpenseItem.swift */; };
 		F0F41C46283548520097F7A2 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C45283548520097F7A2 /* Expenses.swift */; };
 		F0F41C4828354D890097F7A2 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4728354D890097F7A2 /* AddView.swift */; };
+		F0F41C4B2835681A0097F7A2 /* ContentViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4A2835681A0097F7A2 /* ContentViewImage.swift */; };
+		F0F41C4D283624620097F7A2 /* PeripheralDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4C283624620097F7A2 /* PeripheralDetected.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		F0F41C43283548120097F7A2 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		F0F41C45283548520097F7A2 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		F0F41C4728354D890097F7A2 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		F0F41C4A2835681A0097F7A2 /* ContentViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewImage.swift; sourceTree = "<group>"; };
+		F0F41C4C283624620097F7A2 /* PeripheralDetected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDetected.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +145,10 @@
 				F06B569B282FBC1200008ED8 /* Files */,
 				F0075B9428268168004CD640 /* Model */,
 				F0075B91282680F5004CD640 /* Services */,
+				F0F41C4928355FC10097F7A2 /* MoonShot */,
 				F0F41C402835466D0097F7A2 /* iExpense */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
+				F0F41C4A2835681A0097F7A2 /* ContentViewImage.swift */,
 				F06B56AA2832E8EC00008ED8 /* ContentViewOnDelete.swift */,
 				F06B56A82832C68D00008ED8 /* ContentViewSheet.swift */,
 				F06AF6C8282A6036006B350D /* Bluetooth.swift */,
@@ -209,6 +215,7 @@
 				F05C5BC1282682EA00D87600 /* Peripherals.swift */,
 				F05C5BBF282682E100D87600 /* CBUUIDs.swift */,
 				F05C5BBD282682D300D87600 /* Status.swift */,
+				F0F41C4C283624620097F7A2 /* PeripheralDetected.swift */,
 			);
 			path = BlueTooth;
 			sourceTree = "<group>";
@@ -231,6 +238,13 @@
 				F0F41C45283548520097F7A2 /* Expenses.swift */,
 			);
 			path = iExpense;
+			sourceTree = "<group>";
+		};
+		F0F41C4928355FC10097F7A2 /* MoonShot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoonShot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,9 +396,11 @@
 				F06B56A92832C68D00008ED8 /* ContentViewSheet.swift in Sources */,
 				F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */,
 				F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */,
+				F0F41C4D283624620097F7A2 /* PeripheralDetected.swift in Sources */,
 				F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */,
 				F06B56A528328A7200008ED8 /* ContentViewAnimation2.swift in Sources */,
 				F06AF6C72829A56D006B350D /* ContentView3.swift in Sources */,
+				F0F41C4B2835681A0097F7A2 /* ContentViewImage.swift in Sources */,
 				F0075B682825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift in Sources */,
 				F05C5BBE282682D300D87600 /* Status.swift in Sources */,
 			);

@@ -4,44 +4,31 @@
 //  Created by Guillaume Donzeau on 28/01/2022.
 //
 
-//import Foundation
+import Foundation
 import CoreBluetooth
-import Combine
+//import Combine
 //import SwiftUI
 
-class BluetoothService: NSObject {
-    // Test
-    //static var shared = BluetoothService()
-    static let shared: BluetoothService = .init()
+class BluetoothService: NSObject, ObservableObject {
     
     var bluetoothPeripheral = BluetoothPeripheral.shared
     
-    // specific Combine
-    // Savoir à qui ça sert
-    var stateSubject: PassthroughSubject<CBManagerState, Never> = .init()
-    var peripheralSubject: PassthroughSubject<CBPeripheral, Never> = .init()
-    var servicesSubject: PassthroughSubject<[CBService], Never> = .init()
-    var characteristicsSubject: PassthroughSubject<(CBService, [CBCharacteristic]), Never> = .init()
-    //
-    
     private var centralManager: CBCentralManager!
     
-    var discoveredPeripherals = [CBPeripheral]()
+    @Published var discoveredPeripherals = [CBPeripheral]()
     
-    var messageReceived = ""
-    /*
-    override init() {
-        super.init()
-        centralManager = CBCentralManager(delegate: self, queue: nil)
-    }
-     */
+    @Published var messageReceived = ""
+    
     func start() {
-        // Changement
         centralManager = .init(delegate: self, queue: .main)
     }
     
     func startScan() {
         centralManager.scanForPeripherals(withServices: [CBUUIDs.targetCBUUID], options: nil)
+    }
+    
+    func stopScan() {
+        centralManager.stopScan()
     }
     
     func connectBT(peripheral: CBPeripheral) {
@@ -80,14 +67,11 @@ class BluetoothService: NSObject {
                 print("Sending : \(message)")
                 bluetoothPeripheral.targetPeripheral?.writeValue(dataA, for: bluetoothPeripheral.writeCharacteristic, type: CBCharacteristicWriteType.withoutResponse)
             }
-        
     }
     
     func actualize() {
-        
         bluetoothPeripheral.peripheralsDetected = []
         centralManager?.scanForPeripherals(withServices: [CBUUIDs.targetCBUUID]) // replace by nil if you want to scan any peripheral
-        
     }
 }
 
@@ -116,7 +100,7 @@ extension BluetoothService: CBCentralManagerDelegate {
         @unknown default:
             print("Fatal Error")
         }
-        stateSubject.send(central.state) // Envoi les données ?
+        //stateSubject.send(central.state) // Envoi les données ?
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
@@ -133,18 +117,18 @@ extension BluetoothService: CBCentralManagerDelegate {
             let notification = Notification(name: name)
             NotificationCenter.default.post(notification)
         */
-        peripheralSubject.send(peripheral)
+        //peripheralSubject.send(peripheral)
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         // Successfully connected. Store reference to peripheral if not already done.
         self.bluetoothPeripheral.targetPeripheral = peripheral
         peripheral.delegate = self
-        
+        /*
         let name = Notification.Name(rawValue: "BluetoothConnected")
         let notification = Notification(name: name)
         NotificationCenter.default.post(notification)
-        
+        */
         bluetoothPeripheral.targetPeripheral.discoverServices([CBUUIDs.targetCBUUID])
         
     }
@@ -155,8 +139,10 @@ extension BluetoothService: CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         if error != nil {
             // Handle error
+            print("disconnected with error")
             return
         }
+        print("disconnected without error")
         // Successfully disconnected
     }
     
@@ -227,7 +213,7 @@ extension BluetoothService: CBPeripheralDelegate {
         
         case CBUUIDs.dialogCBUUID:
             // Send notification when datas received
-            
+            print("Message reçu du BT")
             if let result = String( data: characteristic.value! , encoding: .utf8) {
                 //print(result)
                 messageReceived = result

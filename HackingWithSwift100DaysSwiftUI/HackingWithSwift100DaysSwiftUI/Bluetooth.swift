@@ -9,43 +9,33 @@ import SwiftUI
 import CoreBluetooth
 import Combine
 
-struct PeripheralDetected: Identifiable {
-    var id = UUID()
-    var name: String
-    var peripheral: CBPeripheral
-    var indentifier: UUID
-}
-
 struct Bluetooth: View {
-    let bluetoothServices = BluetoothService.shared
-    let bluetoothPeripherals = BluetoothPeripheral.shared
     
-    //@Published var peripherals: [CBPeripheral] = []
+    @StateObject var bluetooth = BluetoothService()
     
+    @State private var color = "A"
+    @State private var colors = ["A", "B", "C", "D", "E", "F", "H"]
+    @State private var channel = "CIB01"
+    @State private var channels = ["CIB01", "CIB02", "CIB03", "CIB04", "CIB05"]
     @State private var combien = 0
     
-    @State private var bluetoothDetected = BluetoothPeripheral.shared.peripheralsDetected
-    @State private var peripheralDetected = BluetoothService.shared.discoveredPeripherals
-    @State private var numberOfBluetoothDetected = BluetoothService.shared.discoveredPeripherals.count
-    @State private var detected = BluetoothService.shared.bluetoothPeripheral.peripheralsDetected
-    @State private var howMany = BluetoothService.shared.bluetoothPeripheral.peripheralsDetected.count
     var body: some View {
-        VStack {
+        
         Button("bluetooth Detection") {
-            bluetoothServices.start()
+            bluetooth.start()
         }
         .padding()
         .background(.blue)
         .foregroundColor(.white)
         .cornerRadius(9)
         
-        Text("Nombre : \(numberOfBluetoothDetected)")
-            
-        List(peripheralDetected, id: \.identifier) { peripheral in
+        ForEach(bluetooth.bluetoothPeripheral.peripheralsDetected) { peripheral in
             
             HStack {
                 if let peripheralName = peripheral.name {
-                    Text("Nom du périph : \(peripheralName)")
+                    Button("Nom du périph : \(peripheralName)") {
+                        bluetooth.connectBT(peripheral: peripheral.peripheral)
+                    }
                 } else {
                     Text("Unknown")
                         .opacity(0.2)
@@ -55,13 +45,41 @@ struct Bluetooth: View {
             .padding(.vertical)
             .contentShape(Rectangle())
         }
-        /*
-        ForEach(peripheralDetected, id: \.self) { peripheral in
-            Text("\(String(peripheral))")
-                .padding()
+        VStack {
+            Text("Messages reçus : \(bluetooth.messageReceived)")
+            Picker("Cible", selection: $channel) {
+                ForEach(channels, id:\.self) {
+                    Text($0)
+                }
+            }
+            Picker("Couleur", selection: $color) {
+                ForEach(colors, id:\.self) {
+                    Text($0)
+                }
+            }
+            Button("Send") {
+                let message = light(targetChannel: channel, colorToLight: color)
+                bluetooth.sendOrder(message: message)
+            }
+            .padding()
         }
-         */
+        
     }
+    /*
+     Colors :
+     A : Rouge
+     B : Bleu
+     C : Vert
+     D : Blanc
+     E : Jaune
+     F : Cyan
+     G : Violet
+     H : Off
+     */
+    func light(targetChannel: String, colorToLight: String) -> String {
+        //timer = Timer.scheduledTimer(timeInterval: 0.20, target: self, selector: #selector(reseting), userInfo: nil, repeats: true)
+        let message = targetChannel + ":A:" + colorToLight + ":a:a:0:"
+        return message
     }
 }
 
