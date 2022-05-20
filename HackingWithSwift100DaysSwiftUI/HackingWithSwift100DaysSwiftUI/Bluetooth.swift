@@ -14,7 +14,7 @@ struct Bluetooth: View {
     @StateObject var bluetooth = BluetoothService()
     
     @State private var color = "A"
-    @State private var colors = ["A", "B", "C", "D", "E", "F", "H"]
+    @State private var colors = ["Rouge", "Bleu", "Vert", "Blanc", "Jaune", "Cyan", "Violet", "Off"]
     @State private var channel = "CIB01"
     @State private var channels = ["CIB01", "CIB02", "CIB03", "CIB04", "CIB05"]
     @State private var combien = 0
@@ -47,18 +47,23 @@ struct Bluetooth: View {
         }
         VStack {
             Text("Messages reçus : \(bluetooth.messageReceived)")
+            
             Picker("Cible", selection: $channel) {
                 ForEach(channels, id:\.self) {
                     Text($0)
                 }
             }
+            .pickerStyle(.segmented)
+            
             Picker("Couleur", selection: $color) {
                 ForEach(colors, id:\.self) {
                     Text($0)
                 }
             }
+            .pickerStyle(.segmented)
+            
             Button("Send") {
-                let message = light(targetChannel: channel, colorToLight: color)
+                let message = light(targetChannel: channel, colorToLight: identifyColor(color: color))
                 bluetooth.sendOrder(message: message)
             }
             .padding()
@@ -80,6 +85,29 @@ struct Bluetooth: View {
         //timer = Timer.scheduledTimer(timeInterval: 0.20, target: self, selector: #selector(reseting), userInfo: nil, repeats: true)
         let message = targetChannel + ":A:" + colorToLight + ":a:a:0:"
         return message
+    }
+    
+    func identifyColor(color: String) -> String {
+        switch color {
+        case "Rouge":
+            return "A"
+        case "Bleu":
+            return "B"
+        case "Vert":
+            return "C"
+        case "Blanc":
+            return "D"
+        case "Jaune":
+            return "E"
+        case "Cyan":
+            return "F"
+        case "Violet":
+            return "G"
+        case "Off":
+            return "H"
+        default:
+            return "A"
+        }
     }
 }
 

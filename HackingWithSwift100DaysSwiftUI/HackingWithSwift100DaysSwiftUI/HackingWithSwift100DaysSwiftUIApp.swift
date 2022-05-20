@@ -11,7 +11,7 @@ import SwiftUI
 struct HackingWithSwift100DaysSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            Bluetooth()
+            //Bluetooth()
             //ContentView() // Resto
             //ContentView2() // Drapeaux
             //ContentView3() // Coffee and Sleep
@@ -24,6 +24,11 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
             //ContentViewOnDelete() // Ajout et suppression de lignes (UIKit : cell) dans une liste (UIKit : TableView)
             //ContentViewiExpense() // Project iExpense
             //ContentViewImage()
+            //ContentViewScrollView()
+            //ContentViewNavigationLink()
+            //ContentViewHierarchyData()
+            //ContentViewScrollingGrid()
+            ContentViewSpecificDataCodable()
         }
     }
 }

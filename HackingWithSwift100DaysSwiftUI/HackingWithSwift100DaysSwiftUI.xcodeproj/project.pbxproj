@@ -17,7 +17,6 @@
 		F0075B9328268132004CD640 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0075B9228268132004CD640 /* BluetoothService.swift */; };
 		F05C5BBE282682D300D87600 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BBD282682D300D87600 /* Status.swift */; };
 		F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BBF282682E100D87600 /* CBUUIDs.swift */; };
-		F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC1282682EA00D87600 /* Peripherals.swift */; };
 		F05C5BC4282682F300D87600 /* BluetoothPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */; };
 		F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5BC52826CFCB00D87600 /* ContentView2.swift */; };
 		F06AF6C72829A56D006B350D /* ContentView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06AF6C62829A56C006B350D /* ContentView3.swift */; };
@@ -26,7 +25,6 @@
 		F06B569A282FBACE00008ED8 /* ContentView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B5699282FBACE00008ED8 /* ContentView4.swift */; };
 		F06B569D282FBC2100008ED8 /* some-file.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F06B569C282FBC2100008ED8 /* some-file.rtf */; };
 		F06B569F28305C1400008ED8 /* ContentView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B569E28305C1400008ED8 /* ContentView5.swift */; };
-		F06B56A12830E3B600008ED8 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F06B56A02830E3B600008ED8 /* start.txt */; };
 		F06B56A328312D7200008ED8 /* ContentViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A228312D7200008ED8 /* ContentViewAnimation.swift */; };
 		F06B56A528328A7200008ED8 /* ContentViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A428328A7200008ED8 /* ContentViewAnimation2.swift */; };
 		F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B56A62832B96E00008ED8 /* ContentView6.swift */; };
@@ -38,6 +36,18 @@
 		F0F41C4828354D890097F7A2 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4728354D890097F7A2 /* AddView.swift */; };
 		F0F41C4B2835681A0097F7A2 /* ContentViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4A2835681A0097F7A2 /* ContentViewImage.swift */; };
 		F0F41C4D283624620097F7A2 /* PeripheralDetected.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4C283624620097F7A2 /* PeripheralDetected.swift */; };
+		F0F41C4F28364B100097F7A2 /* ContentViewScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C4E28364B100097F7A2 /* ContentViewScrollView.swift */; };
+		F0F41C5128366BF10097F7A2 /* ContentViewNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C5028366BF10097F7A2 /* ContentViewNavigationLink.swift */; };
+		F0F41C5328369D0F0097F7A2 /* ContentViewHierarchyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C5228369D0F0097F7A2 /* ContentViewHierarchyData.swift */; };
+		F0F41C552836EAAB0097F7A2 /* ContentViewScrollingGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C542836EAAB0097F7A2 /* ContentViewScrollingGrid.swift */; };
+		F0F41C572836EBE30097F7A2 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F0F41C562836EBE30097F7A2 /* start.txt */; };
+		F0F41C592836EC960097F7A2 /* ContentViewSpecificDataCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C582836EC960097F7A2 /* ContentViewSpecificDataCodable.swift */; };
+		F0F41C5B2836ED290097F7A2 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F41C5A2836ED290097F7A2 /* astronauts.json */; };
+		F0F41C5D2836ED370097F7A2 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F41C5C2836ED370097F7A2 /* missions.json */; };
+		F0F41C602836F0A30097F7A2 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C5F2836F0A30097F7A2 /* Astronaut.swift */; };
+		F0F41C622836F0E70097F7A2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C612836F0E70097F7A2 /* Bundle-Decodable.swift */; };
+		F0F41C64283772E70097F7A2 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C63283772E70097F7A2 /* Mission.swift */; };
+		F0F41C662837A3810097F7A2 /* ContentViewMoonShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +81,6 @@
 		F0075B9228268132004CD640 /* BluetoothService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 		F05C5BBD282682D300D87600 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		F05C5BBF282682E100D87600 /* CBUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
-		F05C5BC1282682EA00D87600 /* Peripherals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peripherals.swift; sourceTree = "<group>"; };
 		F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheral.swift; sourceTree = "<group>"; };
 		F05C5BC52826CFCB00D87600 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
 		F06AF6C62829A56C006B350D /* ContentView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView3.swift; sourceTree = "<group>"; };
@@ -80,7 +89,6 @@
 		F06B5699282FBACE00008ED8 /* ContentView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView4.swift; sourceTree = "<group>"; };
 		F06B569C282FBC2100008ED8 /* some-file.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "some-file.rtf"; path = "../../../Documents annexes/some-file.rtf"; sourceTree = "<group>"; };
 		F06B569E28305C1400008ED8 /* ContentView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView5.swift; sourceTree = "<group>"; };
-		F06B56A02830E3B600008ED8 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../../Documents annexes/HackingWithSwift/Classic/project5/Project5/start.txt"; sourceTree = "<group>"; };
 		F06B56A228312D7200008ED8 /* ContentViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewAnimation.swift; sourceTree = "<group>"; };
 		F06B56A428328A7200008ED8 /* ContentViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewAnimation2.swift; sourceTree = "<group>"; };
 		F06B56A62832B96E00008ED8 /* ContentView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView6.swift; sourceTree = "<group>"; };
@@ -92,6 +100,18 @@
 		F0F41C4728354D890097F7A2 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		F0F41C4A2835681A0097F7A2 /* ContentViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewImage.swift; sourceTree = "<group>"; };
 		F0F41C4C283624620097F7A2 /* PeripheralDetected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDetected.swift; sourceTree = "<group>"; };
+		F0F41C4E28364B100097F7A2 /* ContentViewScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewScrollView.swift; sourceTree = "<group>"; };
+		F0F41C5028366BF10097F7A2 /* ContentViewNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewNavigationLink.swift; sourceTree = "<group>"; };
+		F0F41C5228369D0F0097F7A2 /* ContentViewHierarchyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewHierarchyData.swift; sourceTree = "<group>"; };
+		F0F41C542836EAAB0097F7A2 /* ContentViewScrollingGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewScrollingGrid.swift; sourceTree = "<group>"; };
+		F0F41C562836EBE30097F7A2 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../../Documents annexes/HackingWithSwift-main/SwiftUI/project5-files/start.txt"; sourceTree = "<group>"; };
+		F0F41C582836EC960097F7A2 /* ContentViewSpecificDataCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewSpecificDataCodable.swift; sourceTree = "<group>"; };
+		F0F41C5A2836ED290097F7A2 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = astronauts.json; path = "../../../Documents annexes/HackingWithSwift-main/SwiftUI/project8-files/astronauts.json"; sourceTree = "<group>"; };
+		F0F41C5C2836ED370097F7A2 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = missions.json; path = "../../../Documents annexes/HackingWithSwift-main/SwiftUI/project8-files/missions.json"; sourceTree = "<group>"; };
+		F0F41C5F2836F0A30097F7A2 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		F0F41C612836F0E70097F7A2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		F0F41C63283772E70097F7A2 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewMoonShot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +168,11 @@
 				F0F41C4928355FC10097F7A2 /* MoonShot */,
 				F0F41C402835466D0097F7A2 /* iExpense */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
+				F0F41C582836EC960097F7A2 /* ContentViewSpecificDataCodable.swift */,
+				F0F41C542836EAAB0097F7A2 /* ContentViewScrollingGrid.swift */,
+				F0F41C5228369D0F0097F7A2 /* ContentViewHierarchyData.swift */,
+				F0F41C5028366BF10097F7A2 /* ContentViewNavigationLink.swift */,
+				F0F41C4E28364B100097F7A2 /* ContentViewScrollView.swift */,
 				F0F41C4A2835681A0097F7A2 /* ContentViewImage.swift */,
 				F06B56AA2832E8EC00008ED8 /* ContentViewOnDelete.swift */,
 				F06B56A82832C68D00008ED8 /* ContentViewSheet.swift */,
@@ -212,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				F05C5BC3282682F300D87600 /* BluetoothPeripheral.swift */,
-				F05C5BC1282682EA00D87600 /* Peripherals.swift */,
 				F05C5BBF282682E100D87600 /* CBUUIDs.swift */,
 				F05C5BBD282682D300D87600 /* Status.swift */,
 				F0F41C4C283624620097F7A2 /* PeripheralDetected.swift */,
@@ -224,7 +248,9 @@
 			isa = PBXGroup;
 			children = (
 				F06B569C282FBC2100008ED8 /* some-file.rtf */,
-				F06B56A02830E3B600008ED8 /* start.txt */,
+				F0F41C562836EBE30097F7A2 /* start.txt */,
+				F0F41C5A2836ED290097F7A2 /* astronauts.json */,
+				F0F41C5C2836ED370097F7A2 /* missions.json */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -243,6 +269,10 @@
 		F0F41C4928355FC10097F7A2 /* MoonShot */ = {
 			isa = PBXGroup;
 			children = (
+				F0F41C5F2836F0A30097F7A2 /* Astronaut.swift */,
+				F0F41C612836F0E70097F7A2 /* Bundle-Decodable.swift */,
+				F0F41C63283772E70097F7A2 /* Mission.swift */,
+				F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */,
 			);
 			path = MoonShot;
 			sourceTree = "<group>";
@@ -352,9 +382,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0075B6F2825C32D004CD640 /* Preview Assets.xcassets in Resources */,
-				F06B56A12830E3B600008ED8 /* start.txt in Resources */,
 				F06B569D282FBC2100008ED8 /* some-file.rtf in Resources */,
 				F0075B6C2825C32D004CD640 /* Assets.xcassets in Resources */,
+				F0F41C5B2836ED290097F7A2 /* astronauts.json in Resources */,
+				F0F41C5D2836ED370097F7A2 /* missions.json in Resources */,
+				F0F41C572836EBE30097F7A2 /* start.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,21 +411,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F41C602836F0A30097F7A2 /* Astronaut.swift in Sources */,
+				F0F41C662837A3810097F7A2 /* ContentViewMoonShot.swift in Sources */,
 				F06B56AB2832E8EC00008ED8 /* ContentViewOnDelete.swift in Sources */,
 				F06B569F28305C1400008ED8 /* ContentView5.swift in Sources */,
+				F0F41C552836EAAB0097F7A2 /* ContentViewScrollingGrid.swift in Sources */,
+				F0F41C5328369D0F0097F7A2 /* ContentViewHierarchyData.swift in Sources */,
 				F0075B6A2825C329004CD640 /* ContentView.swift in Sources */,
 				F05C5BC4282682F300D87600 /* BluetoothPeripheral.swift in Sources */,
 				F0075B9328268132004CD640 /* BluetoothService.swift in Sources */,
+				F0F41C592836EC960097F7A2 /* ContentViewSpecificDataCodable.swift in Sources */,
 				F06B569A282FBACE00008ED8 /* ContentView4.swift in Sources */,
 				F0F41C4828354D890097F7A2 /* AddView.swift in Sources */,
 				F0F41C46283548520097F7A2 /* Expenses.swift in Sources */,
 				F0F41C42283546920097F7A2 /* ContentViewiExpense.swift in Sources */,
 				F0F41C44283548120097F7A2 /* ExpenseItem.swift in Sources */,
 				F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */,
-				F05C5BC2282682EA00D87600 /* Peripherals.swift in Sources */,
 				F06B56A328312D7200008ED8 /* ContentViewAnimation.swift in Sources */,
 				F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */,
+				F0F41C622836F0E70097F7A2 /* Bundle-Decodable.swift in Sources */,
 				F06B56A92832C68D00008ED8 /* ContentViewSheet.swift in Sources */,
+				F0F41C5128366BF10097F7A2 /* ContentViewNavigationLink.swift in Sources */,
+				F0F41C4F28364B100097F7A2 /* ContentViewScrollView.swift in Sources */,
+				F0F41C64283772E70097F7A2 /* Mission.swift in Sources */,
 				F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */,
 				F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */,
 				F0F41C4D283624620097F7A2 /* PeripheralDetected.swift in Sources */,
