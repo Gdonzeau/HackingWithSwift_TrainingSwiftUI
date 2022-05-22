@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentViewAnimation: View {
+    let title = "7"
     let letters = Array("Hello SwiftUI !")
     @State private var enabled = false
     @State private var dragAmount = CGSize.zero

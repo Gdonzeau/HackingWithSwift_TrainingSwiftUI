@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentViewSpecificDataCodable: View {
+    let title = "17"
     var body: some View {
         Button("Test Fatal Error") {
             print("ok")

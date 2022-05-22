@@ -13,6 +13,7 @@ class Test: ObservableObject {
 }
 
 struct ContentView6: View {
+    let title = "6"
     @StateObject var test = Test()
     var body: some View {
         VStack {

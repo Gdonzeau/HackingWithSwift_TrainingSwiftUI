@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView4: View {
+    let title = "4"
     var body: some View {
         Button("Find doc") {
             //loadFile()

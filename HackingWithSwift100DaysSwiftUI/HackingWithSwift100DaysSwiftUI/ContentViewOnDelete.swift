@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentViewOnDelete: View {
-    
+    let title = "11"
     @State private var numbers = [Int]()
     @State private var currentNumber = 1
     

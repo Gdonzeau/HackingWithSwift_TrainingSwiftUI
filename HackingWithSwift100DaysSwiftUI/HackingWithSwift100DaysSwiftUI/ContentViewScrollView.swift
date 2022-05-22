@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentViewScrollView: View {
+    let title = "13"
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }

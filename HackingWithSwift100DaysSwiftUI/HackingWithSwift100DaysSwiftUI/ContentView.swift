@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    let title = "1"
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20

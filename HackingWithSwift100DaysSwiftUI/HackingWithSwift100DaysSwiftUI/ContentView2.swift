@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView2: View {
+    let title = "2"
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0

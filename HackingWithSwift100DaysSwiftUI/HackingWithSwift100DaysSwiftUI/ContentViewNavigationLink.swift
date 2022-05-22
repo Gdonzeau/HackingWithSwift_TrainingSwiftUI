@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentViewNavigationLink: View {
+    let title = "14"
     var body: some View {
         NavigationView {
             List(0..<100) { row in

@@ -10,7 +10,7 @@ import CoreBluetooth
 import Combine
 
 struct Bluetooth: View {
-    
+    let title = "9"
     @StateObject var bluetooth = BluetoothService()
     
     @State private var color = "A"

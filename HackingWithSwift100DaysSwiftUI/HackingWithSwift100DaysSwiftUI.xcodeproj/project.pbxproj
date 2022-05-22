@@ -48,6 +48,10 @@
 		F0F41C622836F0E70097F7A2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C612836F0E70097F7A2 /* Bundle-Decodable.swift */; };
 		F0F41C64283772E70097F7A2 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C63283772E70097F7A2 /* Mission.swift */; };
 		F0F41C662837A3810097F7A2 /* ContentViewMoonShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */; };
+		F0F41C6828398AA00097F7A2 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6728398AA00097F7A2 /* Color-Theme.swift */; };
+		F0F41C6A28399D1B0097F7A2 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6928399D1B0097F7A2 /* MissionView.swift */; };
+		F0F41C6C283ADE960097F7A2 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6B283ADE960097F7A2 /* MainContentView.swift */; };
+		F0F41C6E283ADED40097F7A2 /* AllApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6D283ADED40097F7A2 /* AllApps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		F0F41C612836F0E70097F7A2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		F0F41C63283772E70097F7A2 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewMoonShot.swift; sourceTree = "<group>"; };
+		F0F41C6728398AA00097F7A2 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		F0F41C6928399D1B0097F7A2 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		F0F41C6B283ADE960097F7A2 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		F0F41C6D283ADED40097F7A2 /* AllApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllApps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +193,7 @@
 				F06AF6C62829A56C006B350D /* ContentView3.swift */,
 				F05C5BC52826CFCB00D87600 /* ContentView2.swift */,
 				F0075B692825C329004CD640 /* ContentView.swift */,
+				F0F41C6B283ADE960097F7A2 /* MainContentView.swift */,
 				F06AF6CE282BF7B5006B350D /* SleepCalculator.mlmodel */,
 				F0075B6B2825C32D004CD640 /* Assets.xcassets */,
 				F0075B6D2825C32D004CD640 /* Preview Content */,
@@ -229,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				F0075B9528268170004CD640 /* BlueTooth */,
+				F0F41C6D283ADED40097F7A2 /* AllApps.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,9 +280,11 @@
 			isa = PBXGroup;
 			children = (
 				F0F41C5F2836F0A30097F7A2 /* Astronaut.swift */,
+				F0F41C6728398AA00097F7A2 /* Color-Theme.swift */,
 				F0F41C612836F0E70097F7A2 /* Bundle-Decodable.swift */,
 				F0F41C63283772E70097F7A2 /* Mission.swift */,
 				F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */,
+				F0F41C6928399D1B0097F7A2 /* MissionView.swift */,
 			);
 			path = MoonShot;
 			sourceTree = "<group>";
@@ -424,8 +436,11 @@
 				F06B569A282FBACE00008ED8 /* ContentView4.swift in Sources */,
 				F0F41C4828354D890097F7A2 /* AddView.swift in Sources */,
 				F0F41C46283548520097F7A2 /* Expenses.swift in Sources */,
+				F0F41C6A28399D1B0097F7A2 /* MissionView.swift in Sources */,
+				F0F41C6828398AA00097F7A2 /* Color-Theme.swift in Sources */,
 				F0F41C42283546920097F7A2 /* ContentViewiExpense.swift in Sources */,
 				F0F41C44283548120097F7A2 /* ExpenseItem.swift in Sources */,
+				F0F41C6E283ADED40097F7A2 /* AllApps.swift in Sources */,
 				F05C5BC0282682E100D87600 /* CBUUIDs.swift in Sources */,
 				F06B56A328312D7200008ED8 /* ContentViewAnimation.swift in Sources */,
 				F05C5BC62826CFCB00D87600 /* ContentView2.swift in Sources */,
@@ -443,6 +458,7 @@
 				F0F41C4B2835681A0097F7A2 /* ContentViewImage.swift in Sources */,
 				F0075B682825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift in Sources */,
 				F05C5BBE282682D300D87600 /* Status.swift in Sources */,
+				F0F41C6C283ADE960097F7A2 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

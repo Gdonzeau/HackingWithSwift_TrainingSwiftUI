@@ -18,6 +18,7 @@ struct Adress: Codable {
 }
 
 struct ContentViewHierarchyData: View {
+    let title = "15"
     var body: some View {
         Button("Decode JSON") {
             //print("Go")

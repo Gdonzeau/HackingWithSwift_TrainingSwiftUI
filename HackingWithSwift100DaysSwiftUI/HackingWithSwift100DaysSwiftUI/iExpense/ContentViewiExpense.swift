@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentViewiExpense: View {
-    
+    let title = "18"
     @StateObject var expenses = Expenses()
     @State private var showingAddExpense = false
     

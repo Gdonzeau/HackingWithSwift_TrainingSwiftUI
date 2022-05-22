@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentViewImage: View {
+    let title = "12"
     var body: some View {
         
         VStack {

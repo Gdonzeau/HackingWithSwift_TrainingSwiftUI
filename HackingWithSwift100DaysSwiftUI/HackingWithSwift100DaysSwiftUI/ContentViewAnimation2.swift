@@ -27,6 +27,7 @@ extension AnyTransition {
 }
 
 struct ContentViewAnimation2: View {
+    let title = "8"
     @State private var isShowingRed = false
     
     var body: some View {

@@ -8,6 +8,7 @@ import CoreML
 import SwiftUI
 
 struct ContentView3: View {
+    let title = "3"
     @State private var wakeUp = defaultWakeUpTime
     @State private var sleepAmount = 8.0
     @State private var coffeeAmount = 1

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentViewScrollingGrid: View {
-    
+    let title = "16"
     let layout = [
         GridItem(.adaptive(minimum: 80, maximum: 120))
     ]

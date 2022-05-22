@@ -21,6 +21,7 @@ struct SecondView: View {
 }
 
 struct ContentViewSheet: View {
+    let title = "10"
     @State private var showingSheet = false
     
     var body: some View {
