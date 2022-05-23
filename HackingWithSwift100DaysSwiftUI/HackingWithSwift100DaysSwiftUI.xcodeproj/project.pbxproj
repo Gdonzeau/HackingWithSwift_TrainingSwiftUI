@@ -52,6 +52,7 @@
 		F0F41C6A28399D1B0097F7A2 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6928399D1B0097F7A2 /* MissionView.swift */; };
 		F0F41C6C283ADE960097F7A2 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6B283ADE960097F7A2 /* MainContentView.swift */; };
 		F0F41C6E283ADED40097F7A2 /* AllApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6D283ADED40097F7A2 /* AllApps.swift */; };
+		F0F41C70283BACED0097F7A2 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6F283BACED0097F7A2 /* AstronautView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		F0F41C6928399D1B0097F7A2 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		F0F41C6B283ADE960097F7A2 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		F0F41C6D283ADED40097F7A2 /* AllApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllApps.swift; sourceTree = "<group>"; };
+		F0F41C6F283BACED0097F7A2 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 				F0F41C63283772E70097F7A2 /* Mission.swift */,
 				F0F41C652837A3810097F7A2 /* ContentViewMoonShot.swift */,
 				F0F41C6928399D1B0097F7A2 /* MissionView.swift */,
+				F0F41C6F283BACED0097F7A2 /* AstronautView.swift */,
 			);
 			path = MoonShot;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				F0F41C4F28364B100097F7A2 /* ContentViewScrollView.swift in Sources */,
 				F0F41C64283772E70097F7A2 /* Mission.swift in Sources */,
 				F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */,
+				F0F41C70283BACED0097F7A2 /* AstronautView.swift in Sources */,
 				F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */,
 				F0F41C4D283624620097F7A2 /* PeripheralDetected.swift in Sources */,
 				F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */,

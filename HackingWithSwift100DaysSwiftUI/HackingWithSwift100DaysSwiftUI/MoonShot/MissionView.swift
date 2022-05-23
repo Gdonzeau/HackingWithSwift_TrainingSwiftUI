@@ -17,18 +17,6 @@ struct MissionView: View {
     
     let crew: [CrewMember]
     
-    init(mission: Mission, astronauts: [String: Astronaut]) {
-        self.mission = mission
-        
-        self.crew = mission.crew.map { member in
-            if let astronaut = astronauts[member.name] {
-                return CrewMember(role: member.role, astronaut: astronaut)
-            } else {
-                fatalError("Missing \(member.name)")
-            }
-        }
-    }
-    
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
@@ -40,19 +28,27 @@ struct MissionView: View {
                         .padding(.top)
                     
                     VStack(alignment: .leading) {
+                        
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(.lightBackground)
+                            .padding(.vertical)
+                        
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         
                         Text(mission.description)
-                    }
-                    .padding(.horizontal)
-                    
-                    VStack {
+                        
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(.lightBackground)
+                            .padding(.vertical)
+                        
                         Text("Astronauts")
                             .font(.title.bold())
-                            .padding([.top, .bottom], 5)
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.bottom, 5)
+                        
                     }
                     .padding(.horizontal)
                     
@@ -60,7 +56,7 @@ struct MissionView: View {
                         HStack {
                             ForEach(crew, id: \.role) { crewMember in
                                 NavigationLink {
-                                    Text("Astronaut details")
+                                    AstronautView(astronaut: crewMember.astronaut)
                                 } label: {
                                     HStack {
                                         Image(crewMember.astronaut.id)
@@ -89,9 +85,22 @@ struct MissionView: View {
                 .padding(.bottom)
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle()) // Plus de problèmes de contraintes
         .navigationTitle(mission.displayName)
         .navigationBarTitleDisplayMode(.inline)
         .background(.darkBackground)
+    }
+    
+    init(mission: Mission, astronauts: [String: Astronaut]) {
+        self.mission = mission
+        
+        self.crew = mission.crew.map { member in
+            if let astronaut = astronauts[member.name] {
+                return CrewMember(role: member.role, astronaut: astronaut)
+            } else {
+                fatalError("Missing \(member.name)")
+            }
+        }
     }
 }
 

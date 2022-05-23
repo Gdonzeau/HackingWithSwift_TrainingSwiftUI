@@ -59,6 +59,7 @@ struct ContentViewMoonShot: View {
             .background(.darkBackground)
             .preferredColorScheme(.dark)
         }
+        .navigationViewStyle(StackNavigationViewStyle()) // Plus de problèmes de contraintes
     }
 }
 
