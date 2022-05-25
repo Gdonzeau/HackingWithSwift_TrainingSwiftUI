@@ -53,6 +53,13 @@
 		F0F41C6C283ADE960097F7A2 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6B283ADE960097F7A2 /* MainContentView.swift */; };
 		F0F41C6E283ADED40097F7A2 /* AllApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6D283ADED40097F7A2 /* AllApps.swift */; };
 		F0F41C70283BACED0097F7A2 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C6F283BACED0097F7A2 /* AstronautView.swift */; };
+		F0F41C72283CD73A0097F7A2 /* ContentViewDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41C71283CD73A0097F7A2 /* ContentViewDrawing.swift */; };
+		F0F41CAA283D2FD10097F7A2 /* TestTifo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41CA9283D2FD10097F7A2 /* TestTifo.swift */; };
+		F0F41CAF283D45D20097F7A2 /* DataReceivedCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41CAE283D45D20097F7A2 /* DataReceivedCommit.swift */; };
+		F0F41CB3283E4B000097F7A2 /* ResultSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41CB2283E4AFF0097F7A2 /* ResultSearch.swift */; };
+		F0F41CB5283E65B50097F7A2 /* choices.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F41CB4283E65B50097F7A2 /* choices.json */; };
+		F0F41CB7283E668E0097F7A2 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F41CB6283E668E0097F7A2 /* Choice.swift */; };
+		F0F41CBB283EA8F50097F7A2 /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F41CBA283EA8F50097F7A2 /* Test.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +129,13 @@
 		F0F41C6B283ADE960097F7A2 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		F0F41C6D283ADED40097F7A2 /* AllApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllApps.swift; sourceTree = "<group>"; };
 		F0F41C6F283BACED0097F7A2 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		F0F41C71283CD73A0097F7A2 /* ContentViewDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewDrawing.swift; sourceTree = "<group>"; };
+		F0F41CA9283D2FD10097F7A2 /* TestTifo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTifo.swift; sourceTree = "<group>"; };
+		F0F41CAE283D45D20097F7A2 /* DataReceivedCommit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReceivedCommit.swift; sourceTree = "<group>"; };
+		F0F41CB2283E4AFF0097F7A2 /* ResultSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSearch.swift; sourceTree = "<group>"; };
+		F0F41CB4283E65B50097F7A2 /* choices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = choices.json; sourceTree = "<group>"; };
+		F0F41CB6283E668E0097F7A2 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		F0F41CBA283EA8F50097F7A2 /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,9 +189,11 @@
 				F06B569B282FBC1200008ED8 /* Files */,
 				F0075B9428268168004CD640 /* Model */,
 				F0075B91282680F5004CD640 /* Services */,
+				F0F41CAB283D2FD70097F7A2 /* TestTifo */,
 				F0F41C4928355FC10097F7A2 /* MoonShot */,
 				F0F41C402835466D0097F7A2 /* iExpense */,
 				F0075B672825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift */,
+				F0F41C71283CD73A0097F7A2 /* ContentViewDrawing.swift */,
 				F0F41C582836EC960097F7A2 /* ContentViewSpecificDataCodable.swift */,
 				F0F41C542836EAAB0097F7A2 /* ContentViewScrollingGrid.swift */,
 				F0F41C5228369D0F0097F7A2 /* ContentViewHierarchyData.swift */,
@@ -292,6 +308,19 @@
 			path = MoonShot;
 			sourceTree = "<group>";
 		};
+		F0F41CAB283D2FD70097F7A2 /* TestTifo */ = {
+			isa = PBXGroup;
+			children = (
+				F0F41CBA283EA8F50097F7A2 /* Test.json */,
+				F0F41CB4283E65B50097F7A2 /* choices.json */,
+				F0F41CA9283D2FD10097F7A2 /* TestTifo.swift */,
+				F0F41CB6283E668E0097F7A2 /* Choice.swift */,
+				F0F41CB2283E4AFF0097F7A2 /* ResultSearch.swift */,
+				F0F41CAE283D45D20097F7A2 /* DataReceivedCommit.swift */,
+			);
+			path = TestTifo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,10 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0075B6F2825C32D004CD640 /* Preview Assets.xcassets in Resources */,
+				F0F41CBB283EA8F50097F7A2 /* Test.json in Resources */,
 				F06B569D282FBC2100008ED8 /* some-file.rtf in Resources */,
 				F0075B6C2825C32D004CD640 /* Assets.xcassets in Resources */,
 				F0F41C5B2836ED290097F7A2 /* astronauts.json in Resources */,
 				F0F41C5D2836ED370097F7A2 /* missions.json in Resources */,
+				F0F41CB5283E65B50097F7A2 /* choices.json in Resources */,
 				F0F41C572836EBE30097F7A2 /* start.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0F41C602836F0A30097F7A2 /* Astronaut.swift in Sources */,
+				F0F41C72283CD73A0097F7A2 /* ContentViewDrawing.swift in Sources */,
 				F0F41C662837A3810097F7A2 /* ContentViewMoonShot.swift in Sources */,
 				F06B56AB2832E8EC00008ED8 /* ContentViewOnDelete.swift in Sources */,
 				F06B569F28305C1400008ED8 /* ContentView5.swift in Sources */,
@@ -455,9 +487,13 @@
 				F06B56A72832B96E00008ED8 /* ContentView6.swift in Sources */,
 				F0F41C70283BACED0097F7A2 /* AstronautView.swift in Sources */,
 				F06AF6C9282A6036006B350D /* Bluetooth.swift in Sources */,
+				F0F41CB7283E668E0097F7A2 /* Choice.swift in Sources */,
 				F0F41C4D283624620097F7A2 /* PeripheralDetected.swift in Sources */,
 				F06AF6CF282BF7B5006B350D /* SleepCalculator.mlmodel in Sources */,
 				F06B56A528328A7200008ED8 /* ContentViewAnimation2.swift in Sources */,
+				F0F41CB3283E4B000097F7A2 /* ResultSearch.swift in Sources */,
+				F0F41CAA283D2FD10097F7A2 /* TestTifo.swift in Sources */,
+				F0F41CAF283D45D20097F7A2 /* DataReceivedCommit.swift in Sources */,
 				F06AF6C72829A56D006B350D /* ContentView3.swift in Sources */,
 				F0F41C4B2835681A0097F7A2 /* ContentViewImage.swift in Sources */,
 				F0075B682825C329004CD640 /* HackingWithSwift100DaysSwiftUIApp.swift in Sources */,

@@ -29,8 +29,10 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
             //ContentViewHierarchyData()
             //ContentViewScrollingGrid()
             //ContentViewSpecificDataCodable()
-            ContentViewMoonShot()
+            //ContentViewMoonShot()
             //MainContentView()
+            //ContentViewDrawing()
+            TestTifo()
         }
     }
 }
