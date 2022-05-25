@@ -31,11 +31,30 @@ struct ResultSearch: View {
                             }
                             
                             ForEach(resultOfSearchUsers, id: \.login) { answer in
-                                
-                                Text(answer.login)
+                                VStack {
+                                    NavigationLink {
+                                        UserView(user: answer)
+                                    } label: {
+                                        HStack {
+                                            if let url = URL(string: answer.avatar_url) {
+                                                AsyncImage(url: url) { image in
+                                                    image.resizable()
+                                                } placeholder: {
+                                                    ProgressView("Please wait ...")
+                                                }
+                                                .scaledToFit()
+                                                .frame(width: 50, height: 50)
+                                                .clipShape(Circle())
+                                            }
+                                            Spacer()
+                                            Text(answer.login)
+                                        }
+                                    }
                                     .padding()
-                                Divider()
+                                    Divider()
+                                }
                             }
+                            
                             ForEach(resultOfSearchRepos, id: \.name) { answer in
                                 
                                 Text(answer.name)
@@ -46,7 +65,17 @@ struct ResultSearch: View {
                             Text("No answer")
                         }
                     } else { // No answer yet
-                        ProgressView()
+                        ProgressView {
+                            Button(action: {
+                                // Do something to stop the task.
+                            }) {
+                                Text("Cancel download")
+                                    .foregroundColor(.white)
+                            }
+                            .padding(8)
+                            .background(Color.red)
+                            .cornerRadius(5)
+                        }
                     }
                 }
                 .navigationTitle("Searching \(typeOfSearch)")

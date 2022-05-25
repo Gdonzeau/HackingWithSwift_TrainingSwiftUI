@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct DataReceivedCommit: Codable {
+struct DataReceivedCommit: Codable { // Fichier type sur une demande de commit
     var items: [Item]
     var total_count: Int
 }
 
-struct DataReceivedUser: Codable {
+struct DataReceivedUser: Codable { // Fichier type sur une demande d'utilisateur
     var items: [Utilisateur]
     var total_count: Int
 }
 
-struct DataReceivedRepository: Codable {
+struct DataReceivedRepository: Codable { // Fichier type sur une demande de dépot
     var items: [DataRepository]
     var total_count: Int
 }
@@ -27,15 +27,18 @@ struct Item: Codable {
     var commit: DataCommit
     var repository: DataRepository
     var score: Double
+    //var owner: Utilisateur
 }
 
 struct DataCommit: Codable {
     var url: String
     var author: DataAuthor
+    var message: String
 }
 
 struct DataAuthor: Codable {
     var name: String
+    var date: String
     var email: String
 }
 
@@ -46,5 +49,6 @@ struct DataRepository: Codable {
 
 struct Utilisateur: Codable {
     var login: String
+    var id: Int
     var avatar_url: String
 }
