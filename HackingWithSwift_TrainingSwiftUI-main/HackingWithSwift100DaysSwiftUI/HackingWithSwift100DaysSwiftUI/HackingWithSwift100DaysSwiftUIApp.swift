@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 @main
 struct HackingWithSwift100DaysSwiftUIApp: App {
@@ -51,6 +52,18 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
                             ContentViewAppStorage()
                         } label: {
                             Text("App storage")
+                                .padding()
+                        }
+                        Button {
+                            toggleTorch(on: true)
+                        } label: {
+                            Text("Light ON")
+                                .padding()
+                        }
+                        Button {
+                            toggleTorch(on: false)
+                        } label: {
+                            Text("Light OFF")
                                 .padding()
                         }
                     }
@@ -103,5 +116,24 @@ struct HackingWithSwift100DaysSwiftUIApp: App {
             //ProgressBarView()
             //ChronometerView()
         }
+    }
+    
+    func toggleTorch(on: Bool) {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        
+        if device.hasTorch {
+            do {
+                try device.lockForConfiguration()
+                
+                device.torchMode = on ? .on : .off
+                
+                device.unlockForConfiguration()
+            } catch {
+                print("Torch could not be used")
+            }
+        } else {
+            print("Torch is not available")
+        }
+        
     }
 }

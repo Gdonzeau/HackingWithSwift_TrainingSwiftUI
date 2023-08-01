@@ -870,7 +870,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HackingWithSwift100DaysSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 8453MU78WA;
+				DEVELOPMENT_TEAM = S47Y9QMPN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Demande d'accès au Bluetooth";
@@ -903,7 +903,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HackingWithSwift100DaysSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = 8453MU78WA;
+				DEVELOPMENT_TEAM = S47Y9QMPN2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Demande d'accès au Bluetooth";
